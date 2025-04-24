@@ -58,7 +58,7 @@ function Urunler() {
 
               {/* Kilo ve Ücret bilgisi */}
               <div className="kilo-ve-ucret">
-                <p><strong>Kilo:</strong> {urun.kilo}</p>
+                <p><strong>Birim:</strong> {urun.kilo}</p>
                 <p><strong>Fiyat:</strong> {urun.ucret}</p>
               </div>
 
