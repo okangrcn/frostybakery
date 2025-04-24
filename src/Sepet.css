@@ -1,48 +1,65 @@
 .sepet-panel {
-    padding: 20px;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 400px;
-    height: 100%;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-  }
-  
-  .sepet-urun {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  .urun-resim {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    margin-right: 15px;
-  }
-  
-  .urun-bilgiler {
-    flex-grow: 1;
-  }
-  
-  .sepet-toplam {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  .odeme-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  .odeme-btn:hover {
-    background-color: #45a049;
-  }
-  
+  padding: 20px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 1000; /* Kapanabilir sepetin üstte görünmesini sağlar */
+}
+
+.sepet-kapat-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.sepet-kapat-btn:hover {
+  background-color: darkred;
+}
+
+.sepet-urun {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.urun-resim {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.urun-bilgiler {
+  flex-grow: 1;
+}
+
+.sepet-toplam {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.odeme-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.odeme-btn:hover {
+  background-color: #45a049;
+}

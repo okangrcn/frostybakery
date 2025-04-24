@@ -112,21 +112,65 @@
   
 }
 /* Mobil uyumluluk için stil */
+/* Mobil uyumluluk için stil */
+/* Mobil uyumluluk için stil */
+/* Mobil uyumluluk için stil */
+/* Mobil uyumluluk için stil */
 @media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;  /* Header öğelerini dikey sıraya yerleştirir */
+    align-items: center;  /* Öğeleri ortalar */
+    padding: 10px 20px;
+  }
+
+  /* Logo en üstte olacak */
+  .logo {
+    order: 1;  /* Logo'nun ilk sırada olması sağlanır */
+    margin-bottom: 20px;  /* Logo ile navbar arasında boşluk bırakılır */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Navbar öğeleri ortalanır ve sıralama dikey yapılır */
+  .navbar {
+    order: 2;  /* Navbar öğeleri ikinci sırada yer alır */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
   .navbar ul {
-    flex-direction: column;  /* Navbar öğelerini dikey sıraya yerleştirir */
-    align-items: center;
+    flex-direction: column;  /* Menü öğeleri dikey sıraya yerleştirilir */
+    align-items: center;  /* Menü öğeleri ortalanır */
+    padding: 0;
+    margin: 0;
   }
 
   .navbar li {
-    margin-left: 0;
-    margin-bottom: 20px;  /* Her öğe arasında 20px boşluk bırakır */
+    margin-bottom: 15px;  /* Menü öğeleri arasına boşluk bırakılır */
+    padding: 10px 0;
   }
 
-  .logo {
-    margin-right: 0;
-    margin-bottom: 20px;  /* Logo ile navbar arasında boşluk bırakır */
+  .navbar a {
+    font-size: 20px;  /* Menü öğelerinin font boyutu */
+    padding: 10px 20px;
+    width: 100%;  /* Menü öğeleri tam genişlikte yapılır */
+    text-align: center;  /* Bağlantılar ortalanır */
+    box-sizing: border-box;
   }
 
- 
+  /* Sepet ikonu en altta olacak */
+  .sepet-icon {
+    order: 3;  /* Sepet ikonu en altta olacak */
+    font-size: 24px;
+    margin-top: 20px;
+    position: absolute;  /* Sepet ikonu sabit bir yerde olacak */
+    bottom: 20px;  /* Ekranın alt kısmına yerleştirilir */
+    right: 20px;  /* Sağ tarafa yerleştirilir */
+  }
 }
+
+

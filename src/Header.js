@@ -34,7 +34,7 @@ function Header() {
       </nav>
 
       {/* Sepet paneli gösterimi */}
-      {showSepet && <Sepet />}
+      {showSepet && <Sepet closeSepet={() => setShowSepet(false)} />}
     </header>
   );
 }

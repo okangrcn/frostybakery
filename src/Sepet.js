@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { SepetContext } from './SepetContext';
 import './Sepet.css'; // Stil dosyasını ekleyin
 
-function Sepet() {
+function Sepet({ closeSepet }) {
   const { sepet } = useContext(SepetContext);
 
   // Ürünleri sepetteki adete göre filtrele
@@ -28,6 +28,7 @@ function Sepet() {
 
   return (
     <div className="sepet-panel">
+      <button className="sepet-kapat-btn" onClick={closeSepet}>X</button>
       <h2>Sepetim</h2>
       {urunler.map((urun) => {
         if (sepet[urun.id] > 0) {
@@ -49,7 +50,7 @@ function Sepet() {
       })}
 
       <div className="sepet-toplam">
-        <h3>Ürünlerin Toplam Fiyatı: {toplamFiyat} TL</h3>
+        <h3>Toplam Fiyat: {toplamFiyat} TL</h3>
         <button className="odeme-btn">Ödeme Adımına Geç</button>
       </div>
     </div>
