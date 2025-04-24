@@ -20,10 +20,10 @@ function Header() {
           <img src={logo} alt="Logo" className="logo-img" />
         </div>
         <ul>
-          <li><a href="#">Anasayfa</a></li>
-          <li><a href="/frostybakery/urunler">Ürünler</a></li>
-          <li><a href="#">Hakkımızda</a></li>
-          <li><a href="#">İletişim</a></li>
+          <li><a href="/anasayfa">Anasayfa</a></li>
+          <li><a href="/urunler">Ürünler</a></li>
+          <li><a href="/hakkimizda">Hakkımızda</a></li>
+          <li><a href="/iletisim">İletişim</a></li>
         </ul>
         <div className="sepet-icon" onClick={toggleSepet}>
           <FiShoppingCart />
