@@ -1,0 +1,146 @@
+/* Ürünler container */
+.urunler-ana {
+  display: flex;
+  flex-direction: column; /* Başlık ve ürünleri dikeyde sıralar */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Ürünler başlığı */
+.urunler-ana h1 {
+  margin-bottom: 20px; /* Başlık altına boşluk ekler */
+}
+
+/* Navbar genişliğinde bir container */
+.urunler-container-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Navbar genişliği kadar sınır */
+  padding: 0 20px;
+  box-sizing: border-box; /* Padding'in dışarı taşmasını engeller */
+  margin: 0 auto; /* Ortalar */
+}
+
+/* Ürün kartlarını tutan container */
+.urunler-container {
+  display: grid; /* Grid düzeni ile kartları sıralıyoruz */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Kartları 250px genişliğinde, her satırda boşluk bırakacak şekilde yerleştiriyoruz */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  width: 100%;
+  padding-bottom: 10px; /* Alt boşluk */
+}
+
+/* Ürün kartı */
+.urun-kart {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 400px; /* Kart boyutunun minimum yüksekliğini ayarladık */
+  height: auto;
+  flex-grow: 1;
+}
+
+/* Kartın hover efekti */
+.urun-kart:hover {
+  transform: scale(1.05); /* Hover ile büyür */
+}
+
+/* Ürün resminin boyutlandırılması */
+.urun-kart img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* Kilo ve ücret bilgisi */
+.urun-kart .kilo-ve-ucret {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Adet kontrol butonları */
+.adet-kontrol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* + ve - butonları */
+.adet-kontrol button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 40px;
+}
+
+/* + ve - butonlarına hover efekti */
+.adet-kontrol button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Adet input */
+.adet-kontrol input {
+  width: 110px;
+  text-align: center;
+  padding: 8px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  cursor: text;
+}
+
+/* Adet input odaklanınca renk değiştirir */
+.adet-kontrol input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Sepete Ekle Butonu */
+.urun-kart button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+/* Sepete Ekle butonuna hover efekti */
+.urun-kart button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+/* Mobil uyumlu düzenleme */
+@media (max-width: 1200px) {
+  .urun-kart {
+    width: 45%; /* 2 kart için %45 genişlik */
+  }
+}
+
+@media (max-width: 768px) {
+  .urun-kart {
+    width: 90%; /* 1 kart için %90 genişlik */
+  }
+}

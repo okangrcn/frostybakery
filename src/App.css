@@ -1,0 +1,73 @@
+/* Genel stilde body'nin varsayılan margin ve padding değerlerini sıfırlıyoruz */
+@font-face {
+  font-family: 'Handelson Four';
+  src: url(../public/fonts/handelson-four.otf) format('opentype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Handelson Four', sans-serif;
+  background-color: #f0f0f0;
+  
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .main-content h2 {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .main-content h2 {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}

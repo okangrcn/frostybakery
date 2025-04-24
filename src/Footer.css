@@ -1,0 +1,17 @@
+.footer {
+    background-color: white;   /* Beyaz arka plan */
+    color: black;              /* Siyah yazı */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: none;          /* Kenarlık kaldırıldı */
+    z-index: 10;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 20px;
+  }
+  
