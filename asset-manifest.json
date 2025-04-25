@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/frostybakery/static/css/main.f2b19002.css",
-    "main.js": "/frostybakery/static/js/main.93148147.js",
+    "main.css": "/frostybakery/static/css/main.8f298f76.css",
+    "main.js": "/frostybakery/static/js/main.1b7bee9f.js",
     "static/media/borek.jpg": "/frostybakery/static/media/borek.a3118b488d14fd9032da.jpg",
     "static/media/banner.png": "/frostybakery/static/media/banner.0458041f02633088a4d9.png",
     "static/media/sarma.jpg": "/frostybakery/static/media/sarma.5c58da241166b6444bdd.jpg",
     "static/media/logo.svg": "/frostybakery/static/media/logo.dab1f4db7a488bbe0b0775d5180e7884.svg",
     "index.html": "/frostybakery/index.html",
-    "main.f2b19002.css.map": "/frostybakery/static/css/main.f2b19002.css.map",
-    "main.93148147.js.map": "/frostybakery/static/js/main.93148147.js.map"
+    "main.8f298f76.css.map": "/frostybakery/static/css/main.8f298f76.css.map",
+    "main.1b7bee9f.js.map": "/frostybakery/static/js/main.1b7bee9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2b19002.css",
-    "static/js/main.93148147.js"
+    "static/css/main.8f298f76.css",
+    "static/js/main.1b7bee9f.js"
   ]
 }
