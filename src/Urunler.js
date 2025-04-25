@@ -24,6 +24,7 @@ function Urunler() {
       kilo: '1 KG',
       ucret: '500 TL',
     },
+    
   ];
 
   // Adet input alanındaki değeri değiştirme

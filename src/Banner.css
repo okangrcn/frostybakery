@@ -1,0 +1,12 @@
+.banner {
+    background: radial-gradient(circle, rgb(244,244,244)60%,rgba(0,0,0,0.08)100%);
+    display: flex;
+    width: 100%;      /* Ekranın tamamını kaplamak için */
+    height: auto;    /* Yüksekliği otomatik olarak ayarlar */
+}
+
+.banner-image {
+    width: 100%;      /* Yatayda ekranı tamamen kaplar */
+    height: 400px;     /* Yüksekliği orantılı olarak ayarlar */
+    object-fit: contain;
+}

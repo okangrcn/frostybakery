@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import { FiShoppingCart } from 'react-icons/fi'; // Sepet ikonu için react-icons kullanıyoruz
 import logo from '../src/assets/logo.svg'; // logo'yu içe aktar
@@ -20,10 +21,10 @@ function Header() {
           <img src={logo} alt="Logo" className="logo-img" />
         </div>
         <ul>
-          <li><a href="/anasayfa">Anasayfa</a></li>
-          <li><a href="/urunler">Ürünler</a></li>
-          <li><a href="/hakkimizda">Hakkımızda</a></li>
-          <li><a href="/iletisim">İletişim</a></li>
+          <li><Link to="/">Anasayfa</Link></li>
+          <li><Link to="/urunler">Ürünler</Link></li>
+          <li><Link to="/hakkimizda">Hakkımızda</Link></li>
+          <li><Link to="/iletisim">İletişim</Link></li>
         </ul>
         <div className="sepet-icon" onClick={toggleSepet}>
           <FiShoppingCart />

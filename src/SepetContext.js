@@ -8,6 +8,7 @@ export const SepetProvider = ({ children }) => {
   const [sepet, setSepet] = useState({
     borek: 0,
     sarma: 0,
+    
   });
 
   // Sepet'e ürün eklemek için fonksiyon

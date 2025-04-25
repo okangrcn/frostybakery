@@ -2,16 +2,15 @@
     background-color: white;   /* Beyaz arka plan */
     color: black;              /* Siyah yazı */
     text-align: center;
-    padding: 20px;
-    position: fixed;
+    padding: 10px;
     bottom: 0;
     width: 100%;
     border-top: none;          /* Kenarlık kaldırıldı */
-    z-index: 10;
   }
   
   .footer p {
     margin: 0;
-    font-size: 20px;
+    font-size: 12px;
+    font-weight: 700;
   }
   

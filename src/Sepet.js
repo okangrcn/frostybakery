@@ -41,7 +41,7 @@ function Sepet({ closeSepet }) {
               <div className="urun-bilgiler">
                 <p><strong>{urun.isim}</strong></p>
                 <p>Adet: {toplamAdet}</p>
-                <p>Toplam Fiyat: {toplamUcret} TL</p>
+                <p>Toplam Fiyat: {formatFiyat(toplamUcret)}</p>
               </div>
             </div>
           );
@@ -50,11 +50,18 @@ function Sepet({ closeSepet }) {
       })}
 
       <div className="sepet-toplam">
-        <h3>Toplam Fiyat: {toplamFiyat} TL</h3>
+        <h3>Toplam Fiyat: {formatFiyat(toplamFiyat)}</h3>
         <button className="odeme-btn">Ödeme Adımına Geç</button>
       </div>
     </div>
   );
 }
+const formatFiyat = (fiyat) => {
+  return new Intl.NumberFormat('tr-TR', {
+    style: 'currency',
+    currency: 'TRY',
+    minimumFractionDigits: 0
+  }).format(fiyat);
+};
 
 export default Sepet;

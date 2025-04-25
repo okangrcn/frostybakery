@@ -1,10 +1,8 @@
 import React from 'react';
-
-const Main = () => {
+import Footer from './Footer';
+function Main () {
   return (
-    <main className="main-content">
-     
-    </main>
+    <Footer/>
   );
 };
 
