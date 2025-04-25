@@ -1,0 +1,26 @@
+.hakkimizda-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: left; /* Metni sola yasla */
+  }
+  
+  .hakkimizda-container h1 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center; /* Başlık ortalı */
+  }
+  
+  .hakkimizda-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color:black;
+    margin-bottom: 15px;
+  }
+  
