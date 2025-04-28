@@ -123,9 +123,10 @@
   .header {
     display: flex;
     align-items: center;  /* Öğeleri ortalar */
-    padding: 10px 20px;
+    padding: 15px 0px;
     position: sticky;
   }
+
   /* Navbar öğeleri ortalanır ve sıralama dikey yapılır */
   .navbar {
     order: 2;  /* Navbar öğeleri ikinci sırada yer alır */
@@ -133,6 +134,7 @@
     display: flex;
     justify-content: center;
     margin-top: 0;  /* Navbar'ın üst kısmındaki boşluk kaldırıldı */
+    position: relative; /* Navbar'ın içine sepet eklemek için relative kullanıldı */
   }
 
   .navbar ul {
@@ -143,26 +145,28 @@
   }
 
   .navbar li {
-    margin-bottom: 0px;  /* Menü öğeleri arasındaki boşluk kaldırıldı */
+    margin-bottom: 10px;  /* Menü öğeleri arasındaki boşluk artırıldı */
     padding: 0;  /* Menü öğelerinin padding'i kaldırıldı */
   }
 
   .navbar a {
     font-size: 18px;  /* Menü öğelerinin font boyutu biraz küçültülür */
-    padding:0px;
+    padding: 0;
     width: 100%;  /* Menü öğeleri tam genişlikte yapılır */
     text-align: center;  /* Bağlantılar ortalanır */
     box-sizing: border-box;
   }
 
-  /* Sepet ikonu en altta olacak */
+  /* Sepet ikonu navbar içinde, alt kısmında konumlandırılıyor */
   .sepet-icon {
     order: 3;  /* Sepet ikonu en altta olacak */
     font-size: 24px;
-    position: absolute;  /* Sepet ikonu sabit bir yerde olacak */
-    bottom:0px;
+    position: absolute;  /* Sepet ikonu navbar içinde konumlandırılıyor */
+    bottom: -10px;  /* Navbar'ın alt kısmına yerleştirilir */
+    
   }
 }
+
 
 
 
