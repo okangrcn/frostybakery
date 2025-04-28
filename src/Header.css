@@ -130,7 +130,7 @@
   /* Logo en üstte olacak */
   .logo {
     order: 1;  /* Logo'nun ilk sırada olması sağlanır */
-    margin-bottom: 20px;  /* Logo ile navbar arasında boşluk bırakılır */
+    margin-bottom: 0;  /* Logo ile navbar arasında boşluk kaldırıldı */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0;  /* Navbar'ın üst kısmındaki boşluk kaldırıldı */
   }
 
   .navbar ul {
@@ -153,13 +153,13 @@
   }
 
   .navbar li {
-    margin-bottom: 15px;  /* Menü öğeleri arasına boşluk bırakılır */
-    padding: 10px 0;
+    margin-bottom: 0;  /* Menü öğeleri arasındaki boşluk kaldırıldı */
+    padding: 0;  /* Menü öğelerinin padding'i kaldırıldı */
   }
 
   .navbar a {
-    font-size: 20px;  /* Menü öğelerinin font boyutu */
-    padding: 10px 20px;
+    font-size: 18px;  /* Menü öğelerinin font boyutu biraz küçültülür */
+    padding: 8px 20px;
     width: 100%;  /* Menü öğeleri tam genişlikte yapılır */
     text-align: center;  /* Bağlantılar ortalanır */
     box-sizing: border-box;
@@ -169,11 +169,12 @@
   .sepet-icon {
     order: 3;  /* Sepet ikonu en altta olacak */
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 0;  /* Sepet ikonu ile navbar arasındaki boşluk kaldırıldı */
     position: absolute;  /* Sepet ikonu sabit bir yerde olacak */
     bottom: 0px;  /* Ekranın alt kısmına yerleştirilir */
     justify-content: center;  /* Sağ tarafa yerleştirilir */
   }
 }
+
 
 
