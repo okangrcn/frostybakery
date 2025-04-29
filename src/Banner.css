@@ -10,3 +10,19 @@
     height: 400px;     /* Yüksekliği orantılı olarak ayarlar */
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+    .banner {
+      height: auto;
+    }
+  
+    .banner-image {
+      width: 100%;
+      height: auto;
+      max-height: 250px; /* Yüksekliği sınırla ama oranı koru */
+      object-fit: contain; /* Görseli kırpmadan orantılı yerleştir */
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
