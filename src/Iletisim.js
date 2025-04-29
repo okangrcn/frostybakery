@@ -21,7 +21,7 @@ function Iletisim() {
 
   return (
     <div className="iletisim-container">
-      <h1>İletişim</h1>
+      <h2>İletişim</h2>
       <p><b>Frosty Bakery</b> ailesi olarak sınırsız destek sunuyoruz. Aşağıdaki formu kullanarak e-posta yoluyla bizimle kolayca iletişime geçebilirsin.</p>
       <form ref={form} onSubmit={sendEmail} className="iletisim-form">
         <div className="form-group">

@@ -10,8 +10,7 @@
     text-align: left; /* Metni sola yasla */
   }
   
-  .hakkimizda-container h1 {
-    font-size: 2rem;
+  .hakkimizda-container h2 {
     color: black;
     margin-bottom: 20px;
     text-align: center; /* Başlık ortalı */

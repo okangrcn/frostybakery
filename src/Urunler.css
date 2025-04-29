@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0px;
+  padding: 20px;
 }
 
 /* Ürünler başlığı */
-.urunler-ana h1 {
+.urunler-ana h2 {
   margin-bottom: 20px; /* Başlık altına boşluk ekler */
 }
 
@@ -135,15 +135,8 @@
   transform: scale(1.1);
 }
 
-/* Mobil uyumlu düzenleme */
-@media (max-width: 1200px) {
-  .urun-kart {
-    width: 45%; /* 2 kart için %45 genişlik */
-  }
-}
-
 @media (max-width: 768px) {
   .urun-kart {
-    width: 90%; /* 1 kart için %90 genişlik */
+    width: 100%; /* 1 kart için %90 genişlik */
   }
 }

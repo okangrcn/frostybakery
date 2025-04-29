@@ -4,22 +4,19 @@
   src: url(../public/fonts/handelson-four.otf) format('opentype');
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+html, body {
   font-family: 'Handelson Four', sans-serif;
   background-color: #f0f0f0;
-  
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .header {
@@ -31,43 +28,9 @@ body {
 
 .main-content {
   flex: 1;
-  padding: 20px;
+  padding: 50px;
   background-color: white;
   text-align: center;
+  margin-bottom: 70px; /* Footer'a yakın boşluk */
 }
 
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Responsive media queries */
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 24px;
-  }
-
-  .main-content h2 {
-    font-size: 20px;
-  }
-
-  .footer p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 20px;
-  }
-
-  .main-content h2 {
-    font-size: 18px;
-  }
-
-  .footer p {
-    font-size: 12px;
-  }
-}

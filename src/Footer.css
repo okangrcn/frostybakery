@@ -1,16 +1,16 @@
 .footer {
-    background-color: white;   /* Beyaz arka plan */
-    color: black;              /* Siyah yazı */
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-    border-top: none;          /* Kenarlık kaldırıldı */
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 700;
-  }
-  
+  background-color: white;   /* Beyaz arka plan */
+  color: black;              /* Siyah yazı */
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border-top: 0px solid #ddd; /* Üst sınır ekler */
+  position: relative;        /* Yerleşimi kontrol eder */
+  bottom: 0;                 /* Sayfa sonuna sabitler */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}

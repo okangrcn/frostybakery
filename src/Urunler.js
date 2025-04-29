@@ -46,8 +46,7 @@ function Urunler() {
 
   return (
     <div className="urunler-ana">
-      <h1>Ürünlerimiz</h1>
-
+      <h2>Ürünlerimiz</h2>
       {/* Navbar genişliğinde bir container */}
       <div className="urunler-container-wrapper">
         <div className="urunler-container">

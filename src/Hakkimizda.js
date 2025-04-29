@@ -4,7 +4,7 @@ import './Hakkimizda.css';
 function Hakkimizda() {
   return (
     <div className="hakkimizda-container">
-      <h1>Hakkımızda</h1>
+      <h2>Hakkımızda</h2>
       <p>
         Yemekleri seviyor, ancak pratikliği de unutmuyoruz! <b>Frosty Bakery</b> olarak, donuk gıda sektöründe kaliteli ve lezzetli ürünlerle yerimizi sağlamlaştırmayı hedefliyoruz. Yüksek standartlara sahip üretim süreçlerimizle, her zaman taze ve sağlıklı alternatifler sunuyoruz. Müşterilerimize, zamanlarının değerli olduğunu bilerek, pratik ve lezzetli çözümler sunmayı amaçlıyoruz.
       </p>
