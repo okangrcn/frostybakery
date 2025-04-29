@@ -13,7 +13,7 @@ import Sepet from './Sepet'; // Sepet bileşeni varsa ekleyebilirsin
 function App() {
   return (
     <SepetProvider>
-      <Router>
+      <Router basename='/frostybakery'>
         <Header />
         <Routes>
           <Route path="/" element={
