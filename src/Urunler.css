@@ -140,3 +140,30 @@
     width: 100%; /* 1 kart için %90 genişlik */
   }
 }
+
+@media (max-width: 400px){
+  .urunler-ana{
+    padding: 0px;
+    gap:10px;
+  }
+  .urun-kart {
+    width: 100%;
+    height: 30%;
+  }
+  .urun-kart h2 {
+    margin-top: 0px;
+  }
+  .urun-kart p {
+    margin-top: 0px;
+  }
+  .urun-kart .kilo-ve-ucret p{
+    margin-top: 0px;
+  }
+  .button {
+    margin-top: 0px;
+  }
+  .urun-kart img {
+    width: 100%;
+    height: 30%;
+  }
+}
