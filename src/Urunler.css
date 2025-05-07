@@ -144,26 +144,25 @@
 @media (max-width: 400px){
   .urunler-ana{
     padding: 0px;
-    gap:10px;
+    gap: 0px; /* boşluğu kaldırdık */
+  }
+  .urunler-container{
+    flex-direction: row;
+    gap: 0px;
   }
   .urun-kart {
     width: 100%;
     height: 30%;
+    margin: 0; /* varsa boşluğu sıfırla */
   }
-  .urun-kart h2 {
-    margin-top: 0px;
-  }
-  .urun-kart p {
-    margin-top: 0px;
-  }
-  .urun-kart .kilo-ve-ucret p{
-    margin-top: 0px;
-  }
+  .urun-kart h2,
+  .urun-kart p,
+  .urun-kart .kilo-ve-ucret p,
   .button {
     margin-top: 0px;
   }
   .urun-kart img {
     width: 100%;
-    height: 30%;
+    height: 50%;
   }
 }
