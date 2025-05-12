@@ -141,7 +141,7 @@
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 425px){
   .urunler-ana{
     padding: 0px;
     gap: 0px; /* boşluğu kaldırdık */
